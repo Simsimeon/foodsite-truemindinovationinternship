@@ -1,5 +1,9 @@
-# React + Vite
 
+
+
+
+# React + Vite
+for the record this the live url https://foodzhub.netlify.app
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
