@@ -6,7 +6,7 @@ import { Button } from '../ui/Button'
 import Footer, { Containerfooter } from '../component/Footer'
 const MenucotainerStyled=styled.div`
   width: 90%;
-  height:250px;
+  height:280px;
   margin:40px auto;
   border-radius:10px;
   background-color:white;

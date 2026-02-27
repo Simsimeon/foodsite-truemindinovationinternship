@@ -8,11 +8,11 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 //  import { GlobalStyles } from './styles/GlobalStyles'
 // import AppLayout from './ui/AppLayout'
 import { lazy } from 'react'
-const Homepage=lazy(()=>import("./page/Home"))
-const Explorepage=lazy(()=>import("./page/Explore"))
-const Accountpage=lazy(()=>import("./page/Account"))
-const Myorderage=lazy(()=>import("./page/Myorder"))
-const Loginpage=lazy(()=>import("./page/Login"))
+const Homepage=lazy(()=>import("./page/Home"));
+const Explorepage=lazy(()=>import("./page/Explore"));
+const Accountpage=lazy(()=>import("./page/Account"));
+const Myorderpage=lazy(()=>import("./page/Myorder"));
+const Loginpage=lazy(()=>import("./page/Login"));
 
 const App = () => {
   return (
@@ -32,10 +32,7 @@ const App = () => {
      
     </Route>
      <Route path='login' element={<Loginpage/>}/>
-    {/* <Route index element={<Navigate replace to="home" />} /> */}
-    
-    
-
+  <Route path='*' element={<Navigate replace to="home" />} />
    </Routes>
    </BrowserRouter>
     </>
